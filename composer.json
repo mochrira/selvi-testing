@@ -1,0 +1,27 @@
+{
+    "name": "mochrira/selvi-testing",
+    "authors": [
+        {
+            "name": "Moch. Rizal Rachmadani",
+            "email": "mochrira@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": {
+        "mochrira/selvi-framework": {
+            "type": "path",
+            "url": "../framework",
+            "options": {
+                "symlink": true
+            }
+        }
+    },
+    "require": {
+        "mochrira/selvi-framework": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "./app"
+        }
+    }
+}
