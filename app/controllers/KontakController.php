@@ -1,13 +1,15 @@
 <?php 
 
 namespace App\Controllers;
-use Selvi\Controller;
+use App\Controller;
 use Selvi\Exception;
 use App\Models\Kontak;
 
 class KontakController extends Controller {
 
     function __construct() {
+        $this->validateToken();
+        $this->validatePengguna();
         $this->load(Kontak::class, 'Kontak');
     }
 

@@ -14,10 +14,18 @@
             "options": {
                 "symlink": true
             }
+        },
+        "mochrira/selvi-firebase": {
+            "type": "path",
+            "url": "../firebase",
+            "options": {
+                "symlink": true
+            }
         }
     },
     "require": {
-        "mochrira/selvi-framework": "dev-master"
+        "mochrira/selvi-framework": "dev-master",
+        "mochrira/selvi-firebase": "dev-master"
     },
     "autoload": {
         "psr-4": {
